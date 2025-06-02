@@ -564,6 +564,18 @@ nav a:hover {
 }
 
 
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
 
 @keyframes fadeInUp {
   from {
@@ -611,5 +623,19 @@ nav a:hover {
 
   button {
     width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-card,
+  .reports-card {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  .page-title {
+    font-size: 1.2rem;
   }
 }
